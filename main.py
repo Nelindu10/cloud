@@ -11,7 +11,7 @@ passengers_collection = db["passengers"]
 
 @app.route("/")
 def home():
-    return "<h1>Welcome to SmartMove Home Page!</h1><br><a href='/register'>Go to Register Page</a>"
+    return render_template("home.html")
 
 
 # GET and POST include
